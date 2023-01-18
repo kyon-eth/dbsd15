@@ -17,7 +17,7 @@ ADD requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 # Add your huggingface auth key here, define models
-ENV HF_AUTH_TOKEN=""
+ENV HF_AUTH_TOKEN="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"
 ENV MODEL_NAME="runwayml/stable-diffusion-v1-5"
 ENV OUTPUT_DIR="stable_diffusion_weights/"
 
