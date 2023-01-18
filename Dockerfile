@@ -6,9 +6,7 @@ WORKDIR /
 # Install git
 RUN apt-get update && apt-get install -y git build-essential
 
-RUN apt-get update && \
-    apt-get install -y git build-essential \
-    apt-get install -y software-properties-common && \
+RUN apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:deadsnakes/ppa && \
     apt-get update && \
     apt install -y python3.10
